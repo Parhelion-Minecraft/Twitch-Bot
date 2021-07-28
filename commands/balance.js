@@ -5,7 +5,7 @@ exports.run = (client, channel, tags, message, args) => {
         host: 'localhost',
         user: process.env.dbUsername,
         password: process.env.dbPassword,
-        database: 'parhelionTwitchBot'
+        database: 'parhelion'
     });
 
     connection.query(`SELECT * FROM points WHERE twitchID=${tags["user-id"]}`, function (error, results, fields) {

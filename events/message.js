@@ -15,7 +15,7 @@ module.exports = (client, channel, tags, message, self) => {
             host: 'localhost',
             user: process.env.dbUsername,
             password: process.env.dbPassword,
-            database: 'parhelionTwitchBot'
+            database: 'parhelion'
         });
 
         if (!talkedRecently.has(tags["user-id"])) {
